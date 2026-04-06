@@ -1,6 +1,7 @@
 import { FinanceProvider } from './context/FinanceProvider.jsx'
 import { InsightsSection } from './components/dashboard/InsightsSection.jsx'
 import { MonthlyIncomeExpenseChart } from './components/dashboard/MonthlyIncomeExpenseChart.jsx'
+import { BalanceTrendChart } from './components/dashboard/BalanceTrendChart.jsx'
 import { SpendingBreakdown } from './components/dashboard/SpendingBreakdown.jsx'
 import { StatsStrip } from './components/dashboard/StatsStrip.jsx'
 import { SummaryCards } from './components/dashboard/SummaryCards.jsx'
@@ -14,6 +15,7 @@ function DashboardShell() {
       <main className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6 lg:space-y-10 lg:px-8">
         <SummaryCards />
         <StatsStrip />
+        <BalanceTrendChart />
         <div className="grid gap-6 lg:grid-cols-2">
           <SpendingBreakdown />
           <MonthlyIncomeExpenseChart />
